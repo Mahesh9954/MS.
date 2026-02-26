@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Powered Luxury Visual Design for Global Brands | Mahesh S. AI Creative Studio - Premium AI Graphic Designer India, Luxury Logo Design, AI Product Photoshoot">
+    <meta name="keywords" content="AI Graphic Designer India, Luxury Logo Design India, AI Product Photoshoot India, AI Image Creation, Premium Brand Identity, Ecommerce Product Photography">
+    <meta name="author" content="Mahesh S. AI Creative Studio">
+    <meta property="og:title" content="Mahesh S. AI Creative Studio | AI-Powered Luxury Visual Design">
+    <meta property="og:description" content="Transforming global brands with AI-powered luxury visuals and premium design solutions">
+    <meta property="og:type" content="website">
+    <title>Mahesh S. AI Creative Studio | AI-Powered Luxury Visual Design</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== CSS RESET & BASE STYLES ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* ===== CUSTOM SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #d4af37, #f4e4bc);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #f4e4bc, #d4af37);
+        }
+        
+        /* ===== UTILITY CLASSES ===== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        
+        .section-padding {
+            padding: 120px 0;
+        }
+        
+        .text-gold {
+            color: #d4af37;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f4e4bc 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f4e4bc 50%, #d4af37 100%);
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d4af37 0%, #f4e4bc 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 5%;
+            transition: all 0.4s ease;
+            background: transparent;
+        }
+        
+        .navbar.scrolled {
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 15px 5%;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        
+        .logo-text span {
+            color: #d4af37;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            position: relative;
+            padding: 10px 0;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #d4af37, #f4e4bc);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #ffffff;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-cta {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #d4af37, #f4e4bc);
+            color: #000000;
+            font-weight: 600;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        .mobile-toggle span {
+            width: 28px;
+            height: 2px;
+            background: #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1920&h=1080&fit=crop') center/cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, transparent 0%, #000000 100%);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            padding: 10px 25px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #d4af37;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-weight: 300;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+        
+        .btn {
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #d4af37, #f4e4bc);
+            color: #000000;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.6);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+        }
+        
+        .btn-secondary:hover {
+            border-color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: #ffffff;
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4);
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(37, 211, 102, 0.6);
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounce 2s infinite;
+        }
+        
+        .scroll-indicator i {
+            color: #d4af37;
+            font-size: 1.5rem;
+        }
+        
+        /* ===== ABOUT SECTION ===== */
+        .about {
+            position: relative;
+            background: linear-gradient(135deg, #0a0a0a 0%, #151515 100%);
+        }
+        
+        .about-content-centered {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-content-centered h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 25px;
+        }
+        
+        .about-content-centered h2 span {
+            color: #d4af37;
+        }
+        
+        .about-content-centered p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 5px;
+        }
+        
+        /* ===== SERVICES SECTION ===== */
+        .services {
+            background: linear-gradient(180deg, #151515 0%, #0a0a0a 100%);
+            position: relative;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px;
+        }
+        
+        .section-label {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+        
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 20px;
+        }
+        
+        .section-header p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 35px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #d4af37, #f4e4bc, #d4af37);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(212, 175, 55, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(244, 228, 188, 0.1));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            transition: all 0.4s ease;
+        }
+        
+        .service-icon i {
+            font-size: 1.8rem;
+            color: #d4af37;
+        }
+        
+        .service-card:hover .service-icon {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.4), rgba(244, 228, 188, 0.2));
+            transform: scale(1.1);
+        }
+        
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        
+        .service-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* ===== PORTFOLIO SECTION ===== */
+        .portfolio {
+            background: linear-gradient(180deg, #0a0a0a 0%, #151515 100%);
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .portfolio-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-overlay h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay h3 {
+            transform: translateY(0);
+        }
+        
+        .portfolio-overlay p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            transform: translateY(20px);
+            transition: transform 0.4s ease 0.1s;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay p {
+            transform: translateY(0);
+        }
+        
+        /* ===== WHY CHOOSE US SECTION ===== */
+        .why-choose {
+            background: linear-gradient(135deg, #151515 0%, #0a0a0a 100%);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s ease;
+        }
+        
+        .feature-item:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-5px);
+            background: rgba(212, 175, 55, 0.05);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(244, 228, 188, 0.1));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: #d4af37;
+        }
+        
+        .feature-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+        
+        .feature-item p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* ===== TESTIMONIALS SECTION ===== */
+        .testimonials {
+            background: linear-gradient(180deg, #0a0a0a 0%, #151515 100%);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 45px 40px;
+            position: relative;
+            transition: all 0.4s ease;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            color: rgba(212, 175, 55, 0.1);
+            line-height: 1;
+        }
+        
+        .testimonial-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-rating {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-rating i {
+            color: #d4af37;
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-text {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .testimonial-author-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(244, 228, 188, 0.15));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+            flex-shrink: 0;
+        }
+        
+        .testimonial-author-icon i {
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+        
+        .testimonial-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 3px;
+        }
+        
+        .testimonial-info p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+        }
+        
+        /* ===== CONTACT SECTION ===== */
+        .contact {
+            background: linear-gradient(135deg, #151515 0%, #0a0a0a 100%);
+            position: relative;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+        
+        .contact-info h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 25px;
+        }
+        
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .contact-item-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(244, 228, 188, 0.1));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-item-icon i {
+            font-size: 1.4rem;
+            color: #d4af37;
+        }
+        
+        .contact-item-text h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        
+        .contact-item-text p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 50px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+            background: rgba(212, 175, 55, 0.05);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+        
+        .form-submit {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #d4af37, #f4e4bc);
+            color: #000000;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .form-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+        }
+        
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #000000;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            padding-bottom: 60px;
+        }
+        
+        .footer-brand .logo {
+            margin-bottom: 20px;
+        }
+        
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-social a:hover {
+            background: linear-gradient(135deg, #d4af37, #f4e4bc);
+            transform: translateY(-3px);
+        }
+        
+        .footer-social a:hover i {
+            color: #000000;
+        }
+        
+        .footer-social i {
+            color: #d4af37;
+            font-size: 1.1rem;
+        }
+        
+        .footer-column h4 {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #d4af37;
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 25px 0;
+            text-align: center;
+        }
+        
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* ===== FLOATING WHATSAPP BUTTON ===== */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: all 0.4s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 50px rgba(37, 211, 102, 0.6);
+        }
+        
+        .floating-whatsapp i {
+            font-size: 1.8rem;
+            color: #ffffff;
+        }
+        
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-15px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-7px);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+        
+        @keyframes borderGlow {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        /* ===== SCROLL REVEAL ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1200px) {
+            .contact-grid {
+                gap: 50px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-toggle {
+                display: flex;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .footer-brand p {
+                max-width: 100%;
+            }
+            
+            .footer-social {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 80px 0;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .about-stats {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 35px 25px;
+            }
+            
+            .floating-whatsapp {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-whatsapp i {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 100px 0;
+            }
+            
+            .section-padding {
+                padding: 60px 0;
+            }
+            
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+            
+            .service-card {
+                padding: 30px 25px;
+            }
+            
+            .testimonial-card {
+                padding: 35px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#hero" class="logo">
+                <img src="https://i.imgur.com/placeholder-ms-logo.png" alt="MS Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="logo-text" style="display:none;">Mahesh <span>S.</span></div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Book Consultation</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="hero-badge">AI Creative Studio</span>
+            <h1>AI-Powered Visual Design<br><span class="text-gradient">That Defines Premium Brands</span></h1>
+            <p class="hero-subtitle">India-based AI Design Expert crafting luxury visuals, product imagery, and brand identity for global startups, ecommerce brands, and visionary creators.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Book Consultation
+                </a>
+                <a href="https://wa.me/919313026285?text=Hello%20Mahesh!%20I'm%20interested%20in%20your%20AI%20design%20services." class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                    <i class="fas fa-images"></i>
+                    View Portfolio
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section (Image removed, centered layout, "Projects Delivered" stat removed) -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-content-centered reveal">
+                <span class="section-label">About Me</span>
+                <h2>Transforming Ideas Into <span class="text-gradient">Luxury Visuals</span></h2>
+                <p>I'm Mahesh S., an AI Design Expert based in India, dedicated to helping global brands elevate their visual identity through cutting-edge artificial intelligence.</p>
+                <p>With a passion for luxury aesthetics and mastery of advanced AI tools, I create stunning product imagery, premium brand identities, and creative visuals that captivate audiences and drive results for ecommerce brands, startups, authors, and marketing agencies worldwide.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24hr</span>
+                        <span class="stat-label">Fast Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What I Offer</span>
+                <h2>Signature <span class="text-gradient">Services</span></h2>
+                <p>Premium AI-powered design solutions crafted to elevate your brand and captivate your audience.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>AI Image Creation</h3>
+                    <p>Custom AI-generated imagery tailored to your brand aesthetic. From concept to completion, I bring your vision to life with precision and creativity.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>AI Product Photoshoot</h3>
+                    <p>Professional product photography without the studio. Create stunning product visuals that convert with AI-powered realistic rendering.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Luxury Packaging Design</h3>
+                    <p>Elevate your product with premium packaging designs that communicate quality, sophistication, and brand value at first glance.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Premium Logo Design</h3>
+                    <p>Timeless, memorable logos that define your brand identity. Crafted with AI precision and human creative direction.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <h3>Sticker & Label Design</h3>
+                    <p>Eye-catching stickers and labels that make your products stand out on shelves and in customers' hands.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Book Cover Design</h3>
+                    <p>Compelling book covers that capture your story's essence and attract readers. Perfect for authors and publishers.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative Illustration</h3>
+                    <p>Unique illustrations and creative art direction that add personality and visual interest to your brand materials.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Brand Identity Design</h3>
+                    <p>Complete visual identity systems that position your brand as a leader in your industry with cohesive, premium aesthetics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">My Work</span>
+                <h2>Featured <span class="text-gradient">Portfolio</span></h2>
+                <p>A selection of premium projects that showcase the power of AI-powered luxury design.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal">
+                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=800&h=600&fit=crop" alt="Luxury Product Design">
+                    <div class="portfolio-overlay">
+                        <h3>Luxury Skincare Brand</h3>
+                        <p>Product Photography & Packaging</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=600&fit=crop" alt="Sneaker Brand Design">
+                    <div class="portfolio-overlay">
+                        <h3>Premium Footwear Campaign</h3>
+                        <p>AI Product Visualization</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=800&h=600&fit=crop" alt="Fashion Brand">
+                    <div class="portfolio-overlay">
+                        <h3>Luxury Fashion Lookbook</h3>
+                        <p>Creative Direction & Imagery</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop" alt="Furniture Brand">
+                    <div class="portfolio-overlay">
+                        <h3>High-End Furniture Catalog</h3>
+                        <p>Product Design & Rendering</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop" alt="Jewelry Brand">
+                    <div class="portfolio-overlay">
+                        <h3>Luxury Jewelry Collection</h3>
+                        <p>Brand Identity & Photography</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <img src="https://images.unsplash.com/photo-1550614000-4b9519e02d48?w=800&h=600&fit=crop" alt="Cosmetics Brand">
+                    <div class="portfolio-overlay">
+                        <h3>Premium Cosmetics Line</h3>
+                        <p>Packaging & Label Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Why Choose Me</span>
+                <h2>Global Clients <span class="text-gradient">Trust My Work</span></h2>
+                <p>Combining AI precision with creative excellence to deliver exceptional results.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Precision</h3>
+                    <p>Leveraging cutting-edge AI tools for pixel-perfect results that exceed expectations every time.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>24-Hour Delivery</h3>
+                    <p>Fast turnaround without compromising quality. Get your visuals ready when you need them.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Unlimited Revisions</h3>
+                    <p>Your satisfaction is guaranteed. I work with you until the vision is perfectly realized.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>International Quality</h3>
+                    <p>World-class design standards that compete with top agencies globally, at accessible pricing.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Affordable Luxury</h3>
+                    <p>Premium design services that fit your budget. Luxury aesthetics without luxury prices.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>Personal attention and responsive communication throughout your entire project journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Anonymous - no names, no images) -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Client Love</span>
+                <h2>What <span class="text-gradient">Clients Say</span></h2>
+                <p>Don't just take my word for it. Here's what global brands have to say.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The AI-powered visuals we received were indistinguishable from professional photoshoots. Our conversion rates increased by 40%! Truly exceptional work."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Verified Client</h4>
+                            <p>Ecommerce Brand, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The book cover designed for my novel is absolutely stunning. It captured the essence of my story perfectly and has received amazing feedback from readers."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Verified Client</h4>
+                            <p>Author, UK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"A game-changer for our startup. The brand identity and product visuals helped us secure our Series A funding. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Verified Client</h4>
+                            <p>Tech Startup, Singapore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Email removed) -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <span class="section-label">Get In Touch</span>
+                    <h2>Let's Create Something <span class="text-gradient">Extraordinary</span></h2>
+                    <p>Ready to elevate your brand with AI-powered luxury visuals? I'm here to help bring your vision to life. Fill out the form or reach out directly via WhatsApp.</p>
+                    <div class="contact-details">
+                        <a href="tel:+919313026285" class="contact-item" style="text-decoration:none;color:inherit;">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Phone / WhatsApp</h4>
+                                <p>+91 9313026285</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/919313026285" target="_blank" class="contact-item" style="text-decoration:none;color:inherit;">
+                            <div class="contact-item-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>WhatsApp Direct</h4>
+                                <p>Chat with me instantly</p>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Location</h4>
+                                <p>India | Serving Global Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fab fa-whatsapp"></i>
+                            Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Email removed from Connect column) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <img src="https://i.imgur.com/placeholder-ms-logo.png" alt="MS Logo" onerror="this.style.display='none'">
+                        <div class="logo-text" style="display:none;">Mahesh <span>S.</span></div>
+                    </a>
+                    <p>AI-Powered Luxury Visual Design for Global Brands. Creating premium visuals that define and elevate brands worldwide.</p>
+
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">AI Image Creation</a></li>
+                        <li><a href="#services">Product Photoshoot</a></li>
+                        <li><a href="#services">Packaging Design</a></li>
+                        <li><a href="#services">Logo Design</a></li>
+                        <li><a href="#services">Book Cover Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0)" onclick="document.getElementById('privacyModal').style.display='flex'">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/919313026285?text=Hello%20Mahesh!%20I'm%20interested%20in%20your%20AI%20design%20services." target="_blank">WhatsApp</a></li>
+                        <li><a href="tel:+919313026285">+91 9313026285</a></li>
+                        <li><a href="#contact">Book Consultation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Mahesh S. AI Creative Studio. All Rights Reserved. Designed with AI & Passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.85); z-index:2000; justify-content:center; align-items:center; padding:20px;">
+        <div style="background:#1a1a1a; border:1px solid rgba(212,175,55,0.3); border-radius:20px; max-width:700px; width:100%; max-height:80vh; overflow-y:auto; padding:50px; position:relative;">
+            <button onclick="document.getElementById('privacyModal').style.display='none'" style="position:absolute; top:20px; right:20px; background:none; border:none; color:#d4af37; font-size:1.5rem; cursor:pointer; width:40px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:50%; transition:all 0.3s ease;" onmouseover="this.style.background='rgba(212,175,55,0.2)'" onmouseout="this.style.background='none'">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 style="font-family:'Playfair Display',serif; font-size:2rem; margin-bottom:25px; color:#d4af37;">Privacy Policy</h2>
+            <div style="color:rgba(255,255,255,0.8); font-size:0.95rem; line-height:1.8;">
+                <p style="margin-bottom:15px;"><strong style="color:#fff;">Last Updated:</strong> January 2025</p>
+                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Information We Collect</h3>
+                <p style="margin-bottom:15px;">We collect information you provide directly, including your name, phone number, and project details when you fill out our contact form or reach out via WhatsApp.</p>
+                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">How We Use Your Information</h3>
+                <p style="margin-bottom:15px;">Your information is used solely to respond to your inquiries, provide design services, and communicate project updates. We never sell or share your personal data with third parties.</p>
+                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Data Security</h3>
+                <p style="margin-bottom:15px;">We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure.</p>
+                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Contact</h3>
+                <p style="margin-bottom:15px;">For any privacy-related questions, please reach out via WhatsApp at +91 9313026285.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919313026285?text=Hello%20Mahesh!%20I'm%20interested%20in%20your%20AI%20design%20services." class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            if (navMenu.style.display === 'flex') {
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.right = '0';
+                navMenu.style.background = 'rgba(0, 0, 0, 0.98)';
+                navMenu.style.padding = '30px';
+                navMenu.style.gap = '20px';
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                // Skip bare "#" links or javascript: links
+                if (!href || href === '#' || href.startsWith('javascript')) return;
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (window.innerWidth <= 992) {
+                        navMenu.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // Privacy modal - close when clicking outside
+        document.getElementById('privacyModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+        // Close privacy modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('privacyModal').style.display = 'none';
+            }
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Trigger on page load
+
+        // Contact form handling (email field removed from submission)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappMessage = `Hello Mahesh! I'm interested in your AI design services.%0A%0AName: ${name}%0APhone: ${phone}%0A%0AProject Details:%0A${message}`;
+            
+            window.open(`https://wa.me/919313026285?text=${whatsappMessage}`, '_blank');
+        });
+
+        // Parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.getElementById('hero');
+            if (hero) {
+                hero.style.backgroundPositionY = `${scrolled * 0.5}px`;
+            }
+        });
+
+        // Add subtle glow effect to service cards on hover
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(212, 175, 55, 0.1), rgba(255, 255, 255, 0.03))`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.background = 'rgba(255, 255, 255, 0.03)';
+            });
+        });
+
+        // Counter animation for stats
+        const animateCounter = (element, target) => {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + (element.dataset.suffix || '');
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + (element.dataset.suffix || '');
+                }
+            }, 30);
+        };
+
+        // Trigger counter animation when about section is visible
+        const aboutSection = document.getElementById('about');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = document.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const text = stat.textContent;
+                        const number = parseInt(text);
+                        if (!isNaN(number)) {
+                            const suffix = text.replace(number, '');
+                            stat.dataset.suffix = suffix;
+                            animateCounter(stat, number);
+                        }
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(aboutSection);
+    </script>
+</body>
+</html>
