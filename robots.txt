@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mahesh9954.github.io/MS./sitemap.xml
+
+# Disallow nothing - all content is public
+Allow: /*.html
+Allow: /*.xml
+Allow: /*.txt
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
