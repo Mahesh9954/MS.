@@ -1286,15 +1286,6 @@
                 box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
             }
         }
-        
-        @keyframes borderGlow {
-            0%, 100% {
-                opacity: 0.5;
-            }
-            50% {
-                opacity: 1;
-            }
-        }
 
         @keyframes spin {
             to { transform: rotate(360deg); }
@@ -1435,8 +1426,7 @@
     <nav class="navbar" id="navbar" aria-label="Main Navigation">
         <div class="navbar-container">
             <a href="#hero" class="logo" aria-label="Mahesh S. AI Creative Studio - Home">
-                <img src="https://i.imgur.com/placeholder-ms-logo.png" alt="Mahesh S. AI Creative Studio Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="logo-text" style="display:none;">Mahesh <span>S.</span></div>
+                <div class="logo-text">Mahesh <span>S.</span></div>
             </a>
             <ul class="nav-menu" role="menubar">
                 <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
@@ -1581,42 +1571,42 @@
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item reveal">
-                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=600&fit=crop" alt="Luxury Skincare Product Design - AI Product Photography" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=800&h=600&fit=crop'">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=600&fit=crop" alt="Luxury Skincare Product Design - AI Product Photography" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>Luxury Skincare Brand</h3>
                         <p>Product Photography & Packaging</p>
                     </div>
                 </div>
                 <div class="portfolio-item reveal">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=600&fit=crop" alt="Premium Sneaker Brand Campaign - AI Product Visualization" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&h=600&fit=crop'">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=600&fit=crop" alt="Premium Sneaker Brand Campaign - AI Product Visualization" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>Premium Footwear Campaign</h3>
                         <p>AI Product Visualization</p>
                     </div>
                 </div>
                 <div class="portfolio-item reveal">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop" alt="Luxury Fashion Lookbook - Creative Direction" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=600&fit=crop'">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop" alt="Luxury Fashion Lookbook - Creative Direction" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>Luxury Fashion Lookbook</h3>
                         <p>Creative Direction & Imagery</p>
                     </div>
                 </div>
                 <div class="portfolio-item reveal">
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop" alt="High-End Furniture Catalog - Product Design & Rendering" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&h=600&fit=crop'">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop" alt="High-End Furniture Catalog - Product Design & Rendering" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>High-End Furniture Catalog</h3>
                         <p>Product Design & Rendering</p>
                     </div>
                 </div>
                 <div class="portfolio-item reveal">
-                    <img src="https://images.unsplash.com/photo-1515562141589-67f0d569b34e?w=800&h=600&fit=crop" alt="Luxury Jewelry Collection - Brand Identity & Photography" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&h=600&fit=crop'">
+                    <img src="https://images.unsplash.com/photo-1515562141589-67f0d569b34e?w=800&h=600&fit=crop" alt="Luxury Jewelry Collection - Brand Identity & Photography" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>Luxury Jewelry Collection</h3>
                         <p>Brand Identity & Photography</p>
                     </div>
                 </div>
                 <div class="portfolio-item reveal">
-                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=600&fit=crop" alt="Premium Cosmetics Line - Packaging & Label Design" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&h=600&fit=crop'">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=600&fit=crop" alt="Premium Cosmetics Line - Packaging & Label Design" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>Premium Cosmetics Line</h3>
                         <p>Packaging & Label Design</p>
@@ -1751,7 +1741,7 @@
         </div>
     </section>
 
-    <!-- Contact Section with FormSubmit (Free, No Backend, Works on GitHub Pages) -->
+    <!-- ========== CONTACT SECTION WITH CORRECTED FORMSUBMIT ========== -->
     <section class="contact section-padding" id="contact">
         <div class="container">
             <div class="contact-grid">
@@ -1799,31 +1789,37 @@
                     </div>
                 </div>
                 <div class="contact-form reveal">
-                    <!-- FormSubmit.co - 100% Free, No Backend, Works on GitHub Pages -->
-                    <!-- Sends email notification to ms.onlineshopzone@gmail.com -->
+                    <!-- Success/Error Message Container -->
                     <div id="formMessage" class="form-message"></div>
-                    <form id="contactForm" action="https://formsubmit.co/ajax/399121a3-51b4-4fa1-b2dd-3991b362e8b1" method="POST">
-                        <!-- FormSubmit Configuration (Hidden Fields) -->
-                        <input type="hidden" name="_access_key" value="399121a3-51b4-4fa1-b2dd-3991b362e8b1">
-                        <input type="hidden" name="_subject" value="New Inquiry - Mahesh S. AI Creative Studio">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="box">
-                        <input type="hidden" name="_next" value="https://mahesh9954.github.io/MS./#contact">
-                        <input type="hidden" name="_autoresponse" value="Thank you for your inquiry! I'll get back to you within 24 hours at your email address.">
-                        <input type="text" name="_honey" style="display:none">
+                    
+                    <!-- ✅ CORRECTED FORMSUBMIT CONFIGURATION -->
+                    <form id="contactForm" action="https://formsubmit.co/ms.onlineshopzone@gmail.com" method="POST">
                         
+                        <!-- FormSubmit Hidden Configuration Fields -->
+                        <input type="hidden" name="_subject" value="🎨 New Design Inquiry from Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://mahesh9954.github.io/MS./#contact">
+                        
+                        <!-- Honeypot Spam Protection -->
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                        
+                        <!-- Visible Form Fields -->
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name">
                         </div>
+                        
                         <div class="form-group">
                             <label for="email">Email Address *</label>
                             <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
                         </div>
+                        
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
                             <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" required autocomplete="tel">
                         </div>
+                        
                         <div class="form-group">
                             <label for="service">Service Required</label>
                             <select id="service" name="service">
@@ -1839,14 +1835,17 @@
                                 <option value="Other">Other</option>
                             </select>
                         </div>
+                        
                         <div class="form-group">
                             <label for="message">Project Details *</label>
                             <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and requirements..." required></textarea>
                         </div>
+                        
                         <button type="submit" class="form-submit" id="submitBtn">
                             <i class="fas fa-paper-plane"></i>
                             Send Message
                         </button>
+                        
                         <p style="text-align:center; margin-top:15px; color:rgba(255,255,255,0.5); font-size:0.85rem;">
                             Or reach out instantly via 
                             <a href="https://wa.me/919313026285?text=Hello%20Mahesh!%20I'm%20interested%20in%20your%20AI%20design%20services." target="_blank" rel="noopener noreferrer" style="color:#25D366; text-decoration:underline;">WhatsApp</a>
@@ -1858,13 +1857,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer section-padding" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#hero" class="logo" aria-label="Back to top">
-                        <img src="https://i.imgur.com/placeholder-ms-logo.png" alt="Mahesh S. AI Creative Studio Logo" onerror="this.style.display='none'">
-                        <div class="logo-text" style="display:none;">Mahesh <span>S.</span></div>
+                        <div class="logo-text">Mahesh <span>S.</span></div>
                     </a>
                     <p>AI-Powered Luxury Visual Design for Global Brands. Creating premium visuals that define and elevate brands worldwide.</p>
                 </div>
@@ -1885,7 +1883,6 @@
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="javascript:void(0)" onclick="document.getElementById('privacyModal').style.display='flex'">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -1893,7 +1890,7 @@
                     <ul class="footer-links">
                         <li><a href="https://wa.me/919313026285?text=Hello%20Mahesh!%20I'm%20interested%20in%20your%20AI%20design%20services." target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                         <li><a href="tel:+919313026285">+91 9313026285</a></li>
-                        <li><a href="mailto:ms.onlineshopzone@gmail.com">ms.onlineshopzone@gmail.com</a></li>
+                        <li><a href="mailto:ms.onlineshopzone@gmail.com">Email Us</a></li>
                         <li><a href="#contact">Book Consultation</a></li>
                     </ul>
                 </div>
@@ -1904,41 +1901,14 @@
         </div>
     </footer>
 
-    <!-- Privacy Policy Modal -->
-    <div id="privacyModal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.85); z-index:2000; justify-content:center; align-items:center; padding:20px;" role="dialog" aria-labelledby="privacyTitle" aria-modal="true">
-        <div style="background:#1a1a1a; border:1px solid rgba(212,175,55,0.3); border-radius:20px; max-width:700px; width:100%; max-height:80vh; overflow-y:auto; padding:50px; position:relative;">
-            <button onclick="document.getElementById('privacyModal').style.display='none'" style="position:absolute; top:20px; right:20px; background:none; border:none; color:#d4af37; font-size:1.5rem; cursor:pointer; width:40px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:50%; transition:all 0.3s ease;" onmouseover="this.style.background='rgba(212,175,55,0.2)'" onmouseout="this.style.background='none'" aria-label="Close Privacy Policy">
-                <i class="fas fa-times"></i>
-            </button>
-            <h2 id="privacyTitle" style="font-family:'Playfair Display',serif; font-size:2rem; margin-bottom:25px; color:#d4af37;">Privacy Policy</h2>
-            <div style="color:rgba(255,255,255,0.8); font-size:0.95rem; line-height:1.8;">
-                <p style="margin-bottom:15px;"><strong style="color:#fff;">Last Updated:</strong> January 2025</p>
-                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Information We Collect</h3>
-                <p style="margin-bottom:15px;">We collect information you provide directly, including your name, email address, phone number, and project details when you fill out our contact form or reach out via WhatsApp.</p>
-                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">How We Use Your Information</h3>
-                <p style="margin-bottom:15px;">Your information is used solely to respond to your inquiries, provide design services, and communicate project updates. We never sell or share your personal data with third parties.</p>
-                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Data Security</h3>
-                <p style="margin-bottom:15px;">We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure.</p>
-                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Cookies</h3>
-                <p style="margin-bottom:15px;">This website does not use cookies or tracking technologies. Your browsing activity is not monitored or stored.</p>
-                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Third-Party Services</h3>
-                <p style="margin-bottom:15px;">We use FormSubmit.co to process contact form submissions. Their privacy policy governs the handling of data during form submission. No other third-party services collect your data.</p>
-                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Your Rights</h3>
-                <p style="margin-bottom:15px;">You have the right to request access to, correction of, or deletion of your personal data at any time.</p>
-                <h3 style="font-family:'Playfair Display',serif; color:#fff; margin:20px 0 10px; font-size:1.2rem;">Contact</h3>
-                <p style="margin-bottom:15px;">For any privacy-related questions, please reach out via WhatsApp at +91 9313026285 or email us at ms.onlineshopzone@gmail.com.</p>
-            </div>
-        </div>
-    </div>
-
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/919313026285?text=Hello%20Mahesh!%20I'm%20interested%20in%20your%20AI%20design%20services." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- JavaScript -->
+    <!-- ========== JAVASCRIPT ========== -->
     <script>
-        // Navbar scroll effect
+        // ===== NAVBAR SCROLL EFFECT =====
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
@@ -1948,7 +1918,7 @@
             }
         });
 
-        // Mobile menu toggle
+        // ===== MOBILE MENU TOGGLE =====
         const mobileToggle = document.getElementById('mobileToggle');
         const navMenu = document.querySelector('.nav-menu');
         
@@ -1974,7 +1944,7 @@
             }
         });
 
-        // Smooth scroll for navigation links
+        // ===== SMOOTH SCROLL FOR NAVIGATION =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
@@ -1998,21 +1968,7 @@
             });
         });
 
-        // Privacy modal - close when clicking outside
-        document.getElementById('privacyModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.style.display = 'none';
-            }
-        });
-
-        // Close privacy modal with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.getElementById('privacyModal').style.display = 'none';
-            }
-        });
-
-        // Scroll reveal animation
+        // ===== SCROLL REVEAL ANIMATION =====
         const revealElements = document.querySelectorAll('.reveal');
         
         const revealOnScroll = () => {
@@ -2029,7 +1985,7 @@
         window.addEventListener('scroll', revealOnScroll);
         revealOnScroll();
 
-        // ===== CONTACT FORM - FormSubmit.co (AJAX, Free, No Backend) =====
+        // ===== ✅ CORRECTED CONTACT FORM SUBMISSION =====
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -2044,7 +2000,7 @@
             formMessage.style.display = 'none';
             formMessage.className = 'form-message';
 
-            // Send via FormSubmit AJAX
+            // Send form data to FormSubmit
             fetch(form.action, {
                 method: 'POST',
                 body: formData,
@@ -2059,50 +2015,31 @@
                 throw new Error('Network response was not ok');
             })
             .then(data => {
-                // Success
+                // Success!
                 formMessage.className = 'form-message success';
                 formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. I\'ll get back to you within 24 hours.';
                 formMessage.style.display = 'flex';
                 form.reset();
                 
-                // Scroll to message
+                // Scroll to success message
                 formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             })
             .catch(error => {
-                // Error - fallback to WhatsApp
+                // Error occurred - provide WhatsApp fallback
                 formMessage.className = 'form-message error';
-                formMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Could not send via form. Redirecting to WhatsApp...';
+                formMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Unable to send. Please try again or contact via <a href="https://wa.me/919313026285" target="_blank" style="color:#25D366; text-decoration:underline;">WhatsApp</a>';
                 formMessage.style.display = 'flex';
                 
-                // Fallback: send via WhatsApp
-                setTimeout(() => {
-                    const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
-                    const phone = document.getElementById('phone').value;
-                    const service = document.getElementById('service').value;
-                    const message = document.getElementById('message').value;
-                    
-                    const whatsappMessage = `Hello Mahesh! I'm interested in your AI design services.%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0A%0AProject Details:%0A${message}`;
-                    
-                    window.open(`https://wa.me/919313026285?text=${whatsappMessage}`, '_blank');
-                }, 2000);
+                console.error('Form submission error:', error);
             })
             .finally(() => {
+                // Reset button state
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
             });
         });
 
-        // Parallax effect for hero
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.getElementById('hero');
-            if (hero) {
-                hero.style.backgroundPositionY = `${scrolled * 0.5}px`;
-            }
-        });
-
-        // Add subtle glow effect to service cards on hover
+        // ===== SERVICE CARD GLOW EFFECT =====
         const serviceCards = document.querySelectorAll('.service-card');
         serviceCards.forEach(card => {
             card.addEventListener('mousemove', (e) => {
@@ -2117,7 +2054,7 @@
             });
         });
 
-        // Counter animation for stats
+        // ===== COUNTER ANIMATION FOR STATS =====
         const animateCounter = (element, target) => {
             let current = 0;
             const increment = target / 50;
