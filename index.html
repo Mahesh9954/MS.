@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://mahesh9954.github.io/MS./">
     <meta property="og:title" content="AI Graphic Designer India | Luxury Logo & Product Design - Mahesh S.">
     <meta property="og:description" content="Premium AI-powered luxury visual design for global brands. Logo design, AI product photoshoot, packaging, brand identity & more. Fast 24hr delivery.">
-    <meta property="og:image" content="https://mahesh9954.github.io/MS./image/MS1.jpg">
+    <meta property="og:image" content="https://mahesh9954.github.io/MS./og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Mahesh S. AI Creative Studio - AI-Powered Luxury Visual Design">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI Graphic Designer India | Luxury Logo & Product Design">
     <meta name="twitter:description" content="Premium AI-powered luxury visual design for global brands. Fast 24hr delivery.">
-    <meta name="twitter:image" content="https://mahesh9954.github.io/MS./image/MS1.jpg">
+    <meta name="twitter:image" content="https://mahesh9954.github.io/MS./og-image.jpg">
 
     <!-- ===== STRUCTURED DATA / JSON-LD SCHEMA ===== -->
     <script type="application/ld+json">
@@ -44,8 +44,8 @@
         "name": "Mahesh S. AI Creative Studio",
         "alternateName": "Mahesh S. AI Design",
         "url": "https://mahesh9954.github.io/MS./",
-        "logo": "https://mahesh9954.github.io/MS./image/MS1.jpg",
-        "image": "https://mahesh9954.github.io/MS./image/MS1.jpg",
+        "logo": "https://mahesh9954.github.io/MS./logo.png",
+        "image": "https://mahesh9954.github.io/MS./og-image.jpg",
         "description": "Premium AI-powered luxury visual design studio specializing in logo design, AI product photoshoot, packaging design, brand identity, book cover design, and creative illustrations for global brands.",
         "telephone": "+919313026285",
         "email": "ms.onlineshopzone@gmail.com",
@@ -393,23 +393,12 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 15px;
         }
         
-        /* ✅ LOGO IMAGE STYLING */
-        .logo-image {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #d4af37;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-            transition: all 0.3s ease;
-        }
-        
-        .logo:hover .logo-image {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+        .logo img {
+            height: 60px;
+            width: auto;
         }
         
         .logo-text {
@@ -1414,15 +1403,6 @@
             .floating-whatsapp i {
                 font-size: 1.5rem;
             }
-
-            .logo-image {
-                width: 40px;
-                height: 40px;
-            }
-
-            .logo-text {
-                font-size: 1.2rem;
-            }
         }
         
         @media (max-width: 480px) {
@@ -1453,8 +1433,6 @@
     <nav class="navbar" id="navbar" aria-label="Main Navigation">
         <div class="navbar-container">
             <a href="#hero" class="logo" aria-label="Mahesh S. AI Creative Studio - Home">
-                <!-- ✅ YOUR IMAGE - ONLY HERE IN NAVBAR -->
-                <img src="./image/MS1.jpg" alt="Mahesh S." class="logo-image">
                 <div class="logo-text">Mahesh <span>S.</span></div>
             </a>
             <ul class="nav-menu" role="menubar">
@@ -1590,7 +1568,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- ✅ PORTFOLIO SECTION - FIXED IMAGES -->
     <section class="portfolio section-padding" id="portfolio">
         <div class="container">
             <div class="section-header reveal">
@@ -1599,6 +1577,7 @@
                 <p>A selection of premium projects that showcase the power of AI-powered luxury design.</p>
             </div>
             <div class="portfolio-grid">
+                <!-- ✅ Portfolio Item 1 - Luxury Skincare -->
                 <div class="portfolio-item reveal">
                     <img src="https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Luxury Skincare Product Design - AI Product Photography" loading="lazy">
                     <div class="portfolio-overlay">
@@ -1607,6 +1586,7 @@
                     </div>
                 </div>
                 
+                <!-- ✅ Portfolio Item 2 - Premium Sneaker -->
                 <div class="portfolio-item reveal">
                     <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Premium Sneaker Brand Campaign - AI Product Visualization" loading="lazy">
                     <div class="portfolio-overlay">
@@ -1615,6 +1595,7 @@
                     </div>
                 </div>
                 
+                <!-- ✅ Portfolio Item 3 - Luxury Fashion -->
                 <div class="portfolio-item reveal">
                     <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Luxury Fashion Lookbook - Creative Direction" loading="lazy">
                     <div class="portfolio-overlay">
@@ -1623,6 +1604,7 @@
                     </div>
                 </div>
                 
+                <!-- ✅ Portfolio Item 4 - High-End Furniture -->
                 <div class="portfolio-item reveal">
                     <img src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="High-End Furniture Catalog - Product Design & Rendering" loading="lazy">
                     <div class="portfolio-overlay">
@@ -1631,6 +1613,7 @@
                     </div>
                 </div>
                 
+                <!-- ✅ Portfolio Item 5 - Luxury Jewelry -->
                 <div class="portfolio-item reveal">
                     <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Luxury Jewelry Collection - Brand Identity & Photography" loading="lazy">
                     <div class="portfolio-overlay">
@@ -1639,6 +1622,7 @@
                     </div>
                 </div>
                 
+                <!-- ✅ Portfolio Item 6 - Premium Cosmetics -->
                 <div class="portfolio-item reveal">
                     <img src="https://images.pexels.com/photos/3018840/pexels-photo-3018840.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Premium Cosmetics Line - Packaging & Label Design" loading="lazy">
                     <div class="portfolio-overlay">
@@ -1775,7 +1759,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ✅ CONTACT SECTION - ALREADY WORKING -->
     <section class="contact section-padding" id="contact">
         <div class="container">
             <div class="contact-grid">
