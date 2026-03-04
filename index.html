@@ -44,7 +44,7 @@
         "name": "Mahesh S. AI Creative Studio",
         "alternateName": "Mahesh S. AI Design",
         "url": "https://mahesh9954.github.io/MS./",
-        "logo": "https://mahesh9954.github.io/MS./logo.png",
+        "logo": "https://mahesh9954.github.io/MS./MS1.jpg",
         "image": "https://mahesh9954.github.io/MS./og-image.jpg",
         "description": "Premium AI-powered luxury visual design studio specializing in logo design, AI product photoshoot, packaging design, brand identity, book cover design, and creative illustrations for global brands.",
         "telephone": "+919313026285",
@@ -394,6 +394,20 @@
             display: flex;
             align-items: center;
             gap: 15px;
+        }
+        
+        .logo-img {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #d4af37;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.08);
         }
         
         .logo-text {
@@ -1428,6 +1442,7 @@
     <nav class="navbar" id="navbar" aria-label="Main Navigation">
         <div class="navbar-container">
             <a href="#hero" class="logo" aria-label="Mahesh S. AI Creative Studio - Home">
+                <img src="MS1.jpg" alt="Mahesh S. AI Creative Studio Logo" class="logo-img">
                 <div class="logo-text">Mahesh <span>S.</span></div>
             </a>
             <ul class="nav-menu" role="menubar">
@@ -1867,6 +1882,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#hero" class="logo" aria-label="Back to top">
+                        <img src="MS1.jpg" alt="Mahesh S. Logo" class="logo-img">
                         <div class="logo-text">Mahesh <span>S.</span></div>
                     </a>
                     <p>AI-Powered Luxury Visual Design for Global Brands. Creating premium visuals that define and elevate brands worldwide.</p>
